@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyTube - Watch</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+}
+
+/* TOPBAR */
+.topbar {
+  padding: 14px 20px;
+  border-bottom: 1px solid #222;
+}
+
+.back {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+}
+
+/* LEFT */
+.main {
+  flex: 3;
+}
+
+/* PLAYER */
+.player iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  border: none;
+}
+
+/* VIDEO INFO */
+.video-info {
+  margin-top: 16px;
+}
+
+.video-info h1 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.video-info .meta {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* COMMENTS */
+.comments {
+  margin-top: 32px;
+}
+
+.comments h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.comment {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #333;
+  border-radius: 50%;
+}
+
+.comment-content h4 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.comment-content p {
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* RIGHT */
+.sidebar {
+  flex: 1.2;
+}
+
+.recommend {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.recommend img {
+  width: 160px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.recommend-info h4 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.channel-name {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.views {
+  font-size: 12px;
+  color: #777;
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <a href="index.html" class="back">← Kembali ke Beranda</a>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <!-- LEFT -->
+  <div class="main">
+
+    <!-- VIDEO -->
+    <div class="player">
+      <iframe
+        src="https://www.youtube.com/embed/mZbirBfB6RA?autoplay=1&rel=0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- INFO -->
+    <div class="video-info">
+      <h1>????</h1>
+      <div class="meta">Unknown Channel • 63,8 M kali ditonton</div>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comments">
+      <h2>4 Komentar</h2>
+
+      <div class="comment">
+        <div class="avatar"></div>
+        <div class="comment-content">
+          <h4>unknown</h4>
+          <p>Keren banget bang 🔥</p>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="avatar"></div>
+        <div class="comment-content">
+          <h4>unknown</h4>
+          <p>Terharu nontonnya 😭</p>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="avatar"></div>
+        <div class="comment-content">
+          <h4>unknown</h4>
+          <p>Auto nonton sampe abis</p>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="avatar"></div>
+        <div class="comment-content">
+          <h4>unknown</h4>
+          <p>MyTube makin mirip YouTube 😆</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="sidebar">
+
+    <div class="recommend">
+      <img src="img/img17.jpeg">
+      <div class="recommend-info">
+        <h4>????</h4>
+        <div class="channel-name">Unknown Channel</div>
+        <div class="views">1,2 jt kali ditonton</div>
+      </div>
+    </div>
+
+    <div class="recommend">
+      <img src="img/img1.jpeg">
+      <div class="recommend-info">
+        <h4>????</h4>
+        <div class="channel-name">Unknown Channel</div>
+        <div class="views">856 rb kali ditonton</div>
+      </div>
+    </div>
+
+    <div class="recommend">
+      <img src="img/img2.jpeg">
+      <div class="recommend-info">
+        <h4>????</h4>
+        <div class="channel-name">Unknown Channel</div>
+        <div class="views">3,4 jt kali ditonton</div>
+      </div>
+    </div>
+
+    <div class="recommend">
+      <img src="img/img3.jpeg">
+      <div class="recommend-info">
+        <h4>????</h4>
+        <div class="channel-name">Unknown Channel</div>
+        <div class="views">129 rb kali ditonton</div>
+      </div>
+    </div>
+
+    <div class="recommend">
+      <img src="img/img4.jpeg">
+      <div class="recommend-info">
+        <h4>????</h4>
+        <div class="channel-name">Unknown Channel</div>
+        <div class="views">9,8 jt kali ditonton</div>
+      </div>
+    </div>
+
+    <div class="recommend">
+      <img src="img/img20.jpeg">
+      <div class="recommend-info">
+        <h4>????</h4>
+        <div class="channel-name">Unknown Channel</div>
+        <div class="views">412 rb kali ditonton</div>
+      </div>
+    </div>
+
+    <div class="recommend">
+      <img src="img/img21.jpeg">
+      <div class="recommend-info">
+        <h4>????</h4>
+        <div class="channel-name">Unknown Channel</div>
+        <div class="views">2,1 jt kali ditonton</div>
+      </div>
+    </div>
+
+    <div class="recommend">
+      <img src="img/img1.jpeg">
+      <div class="recommend-info">
+        <h4>????</h4>
+        <div class="channel-name">Unknown Channel</div>
+        <div class="views">77 rb kali ditonton</div>
+      </div>
+    </div>
+
+    <div class="recommend">
+      <img src="img/img15.jpeg">
+      <div class="recommend-info">
+        <h4>????</h4>
+        <div class="channel-name">Unknown Channel</div>
+        <div class="views">77 rb kali ditonton</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
